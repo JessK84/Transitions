@@ -82,6 +82,7 @@ h3 {
 .box-four {
     transition-property: all;
     box-shadow: 1px 2px 3px black;
+    border-radius: 3px;
 }
 
 .box-five,
@@ -94,20 +95,23 @@ h3 {
 .box-twelve,
 .box-fifteen,
 .box-sixteen,
-.box-seventeen,
-.box-eighteen{
+.box-seventeen{
     transition-property: all, .7s 2.4s;
     overflow: hidden;
-    transition: transform;
+    border-radius: 3px;
 }
 button {
     background-color: rgb(31, 29, 29);  
     color: white;
     display: flex;
     overflow: hidden;
+
 }
 
-
+.box-eighteen{
+    transition-property: all, .7s 2.4s;
+    overflow: hidden;
+}
 .button-one {
     margin: 40px 150px;
     display: flex;
@@ -132,7 +136,7 @@ button {
     color: rgb(177, 165, 165);
     cursor: pointer;
     border: 1px solid rgb(31, 29, 29);
-    border-radius: 3px;
+
 }
 
 .icon-box {
@@ -227,6 +231,7 @@ button {
     position: relative;
     box-shadow: 6px 6px 0px rgb(71, 69, 69);
     border-bottom:1px solid black;
+    border: none;
 }
 .box-seven:hover {
     position: relative;
@@ -258,7 +263,7 @@ button {
 }
 
 .box-eighteen:hover {
-    transition-delay: .4s;
-    transform: translatex(230px);
-    transition: 1.2s;
+    transition-delay: .9s;
+    transform: translatex(165px);
+    transition: 1.5s;
 }
