@@ -57,8 +57,8 @@ h3 {
     width: 100%;
     height: 340px;
     transition: all;
-    overflow: hidden;
     margin: 0px;
+    padding: 0px;
 }
 .container-one {
     background-color: rgb(231, 103, 129);
@@ -93,33 +93,24 @@ h3 {
 .box-ten,
 .box-eleven,
 .box-twelve,
+.box-fourteen
 .box-fifteen,
 .box-sixteen,
 .box-seventeen{
-    transition-property: all, .7s 2.4s;
+    transition-property: all;
     overflow: hidden;
     border-radius: 3px;
 }
-button {
-    background-color: rgb(31, 29, 29);  
-    color: white;
-    display: flex;
-    overflow: hidden;
 
-}
-
-.box-eighteen{
-    transition-property: all, .7s 2.4s;
-    overflow: hidden;
-}
 .button-one {
-    margin: 40px 150px;
+    margin: 0px 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 0px;
 }
-
-button {
+.box-seventeen,
+.box-eight {
     width: 170px;
     height: 90px;
     margin: 40px 20px;    
@@ -133,38 +124,131 @@ button {
     text-align: center;
     font-size: 20px;
     font-weight: 100;
-    color: rgb(177, 165, 165);
+    cursor: pointer;
+    border: 1px solid rgb(180, 134, 74);
+    background-color: rgb(180, 134, 74) ;  
+    color: white;
+}
+button{
+    width: 170px;
+    height: 90px;
+    margin: 40px 20px;    
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
     cursor: pointer;
     border: 1px solid rgb(31, 29, 29);
-
+    background-color: rgb(31, 29, 29);  
+    color: white;
 }
 
 .icon-box {
     width: 191px;
-    height: 148px;
+    height: 220px;
     overflow: hidden;
     margin: 0px;
+}
+.box-five-bis {
+    position: absolute;
+    bottom: -28px;
+    border-radius: 3px;
+}
+.box-five {
+    position: relative;
+    top: 2px;
+    border: rgb(71, 69, 69);
+    background-color: rgb(71, 69, 69);
+    border-radius: 3px;
 }
 .box-eighteen {
     position: relative;
     bottom: 130px;
     border-radius: none;
-
 }    
 .icon-one {
     font-size: 50px;
+    text-align: center;
+}
+.icon-two {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 28px;
+}
+.icon-three {
+    display: none;
 }
 .box-twelve {
     position:relative;
-    bottom: -0px;
+    top: 0px;
+}
+.box-fourteen {
+    background-color: rgb(107, 150, 110);
+    border: 2px solid white;
+    padding: 15px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.box-sixteen-bis {
+    background-color:rgb(180, 134, 74) ;
+    border: 2px solid rgb(31, 29, 29);
+    border-radius: 3px;
+}
+.box-fourteen-bis {
+    background-color:rgb(107, 150, 110);
+    border:0.5px solid white;
+    border-radius: 3px ;
 }
 
-
+.box-fifteen, 
+.box-sixteen,
+.box-ten {
+    position: absolute;
+    bottom: -31px;
+}
+.box-icon-bis {
+    position: relative;
+    bottom: 0px;
+    border-radius: 3px;
+    border: 1px solid rgb(43, 40, 40);
+    background-color: rgb(43, 40, 40);
+}
 
 .box-icon {
     position: absolute;
+    border-radius: 3px;
+    border: 1px solid rgb(43, 40, 40);
+    background-color: rgb(43, 40, 40);
+}
+.sub-box {
+    margin: 0px;
+    padding: 0px;
+    height: 139px;
+    width: 190px;
+    overflow: hidden;
+    position: relative;
+    bottom: 0px;
+}
+.sub-box-one {
+    margin: 0px;
+    padding: 0px;
+    height: 239px;
+    overflow: hidden;
+    position: relative;
+    bottom: 0px; 
 }
 
+.box-poo-one {
+    position: relative;
+    bottom: 500px;
+}
 /*-----------------------------------------------------------------------
 --------------------------------------------------------------------------
                               TRANSITION BUTTON:HOVER
@@ -173,17 +257,15 @@ button {
 .box-one:hover {
     color: white;
     font-family: 'Shadows Into Light', cursive;
-    font-size: 45px;   
-    transform: scale(1) rotate(-3600deg);
+    letter-spacing: 1px; 
+    transform:scale(1.5) rotate(-3600deg);
     transition: 4s;
-    line-height: 60px;
+    line-height: 40px;
     opacity: 90%;
     background-color: rgb(231, 103, 129);
     border: 0px solid rgb(231, 103, 129);
     position: relative;
     box-shadow: none;
-    width: 300px;
-    height: 200px;
     margin: 0px;
 }
 .box-two:hover {
@@ -197,19 +279,20 @@ button {
     box-shadow: none;
 }
 .box-three:hover {
-    transform: scale(.8);
-    transition: 2s;
-    background-color: rgb(80, 77, 77);
+    transform: scaleY(.7) skew(-20deg);
+    background-color: rgb(231, 103, 129);
     color: cornsilk;
     box-shadow: none;
-    font-weight: 700;
-    border: 1px solid white;
-    border-radius: 0px;
+    font-weight: 100;
+    border: 3px solid white;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    transition: .8s, 1s;
 }
 
 .box-four:hover  { 
     font-size: 26px;
-    background-color:rgb(231, 103, 129) ;
+    background-color: rgba(255, 255, 255, 0.1) ;
     border: 1px solid white;
     color: white;
     position: relative;
@@ -218,12 +301,12 @@ button {
     transition-duration: .3s;
     transition-delay: .3s;
 }
-.box-five:hover {
-    top: -120px;
-    right: -120px;
+.box-five-bis:hover {
+    transition-duration: .9s;
     position: relative;
+    top: 2px;
+    
 }
-
 .box-six:hover {
     transition-timing-function: 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
     top:8px;
@@ -243,25 +326,61 @@ button {
     height: 90px;
     margin: auto 0px;
 }
-.box-eight:hover {
-    transition: .1s, 0.1s .3s;
-    background-color: white;
-    border:1px solid white;
-    transform: rotate(10deg, -10deg);
-}
 
 .box-eight:hover {
-    background-color: white;
-    border:1px solid white;
-    transition: .2s, 0.2s;
-    transform: rotate(10deg); 
+    border-left: 3px solid white;
+    padding-left: 1px;
+    transition: .2s;
+    transform: scaleY(.7) translateX(18px); 
+    color: white;
 }
-.icon-box:hover .box-icon {
-    transition-delay: .4s;
-    transform: translateY(85px);
-    transition: .7s;
+.box-nine:hover {
+    font-size: 24px;
+    padding-bottom: .1px;
+    background-color: rgb(180, 134, 74);
+    border: none;
+    border-bottom: 3px solid black;
+    color: black;
+    transition-delay: .6s;
+    transition: .2s;
+}
+.box-ten:hover {
+    transform: scale(.4)  translate(-170px, -68px);
+    transition-delay: 1.8s;
+    transition: 2.8s;
+}
+.box-eleven:hover {
+    border: 1px solid rgb(49, 46, 46);
+    background-color: rgb(49, 46, 46);  
+    color: rgb(219, 213, 213);
+    position: relative;
+    top: 3px;
+    box-shadow: 6px 6px 0px rgb(71, 69, 69);
+}
+.box-seventeen:hover {
+    transform: scale(.8);
+    transition-duration: .3s;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 500 ;
+}
+.box-twelve:hover {
+    transform: scaleY(.4) translateY(125px);
+    transition-delay: .9s;
+    transition: .7s, .4s;
 }
 
+.box-fifteen:hover {
+    transition-delay: .3s;
+    transform: translateY(165px) rotate(35deg);
+    transition: 3.5s;
+}
+.box-sixteen:hover {
+    transform: scale(.8);
+    transition-duration: .4s;
+}
 .box-eighteen:hover {
     transition-delay: .9s;
     transform: translatex(165px);
